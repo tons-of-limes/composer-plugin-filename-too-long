@@ -4,7 +4,7 @@ The plugin allows to install composer packages,
 which includes files with names longer than 143 characters in the encrypted directory.
 An extension removes invalid files from downloaded package archive before installation.
 
-#### Example of error during `Magento 2` installation which
+#### Example of error during `Magento 2` installation which can be fixed by the plugin
 ```
 Package operations: 1 install, 0 updates, 0 removals
   - Installing magento/magento2-base (2.4.8-p3): Extracting archive
