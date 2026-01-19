@@ -13,7 +13,7 @@ use Composer\Package\PackageInterface;
 use Composer\Plugin\PostFileDownloadEvent;
 use TonsOfLimes\FilenameTooLongPlugin\Config\Config;
 use ZipArchive;
-use function TonsOfLimes\FilenameTooLongPlugin\Utils\format;
+use function TonsOfLimes\FilenameTooLongPlugin\Util\format;
 
 /**
  * On `post-file-download` hook.
@@ -98,7 +98,7 @@ class OnPostFileDownload
         }
 
         $this->io->info(
-            format($context->getName(), 'Processed archive. %d file(s) fixed.', count($processedCount))
+            format($context->getName(), 'Processed archive. %d file(s) fixed.', $processedCount)
         );
     }
 

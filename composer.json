@@ -1,8 +1,11 @@
 {
     "name": "tonsoflimes/plugin-filename-too-long",
     "type": "composer-plugin",
-    "description": "Composer plugin to handle `filename too long` issue on encrypted fs",
-    "version": "0.0.1",
+    "description": "Composer plugin to handle `filename too long` issue on encrypted filesystems.",
+    "version": "0.0.2",
+    "license": [
+        "MIT"
+    ],
     "require": {
         "composer-plugin-api": "^2.0"
     },
@@ -12,7 +15,10 @@
     "autoload": {
         "psr-4": {
             "TonsOfLimes\\FilenameTooLongPlugin\\": "src/"
-        }
+        },
+        "files": [
+            "src/Util/log.php"
+        ]
     },
     "extra": {
         "class": "TonsOfLimes\\FilenameTooLongPlugin\\Plugin"

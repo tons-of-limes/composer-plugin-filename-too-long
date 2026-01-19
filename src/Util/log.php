@@ -4,9 +4,9 @@
  */
 declare(strict_types=1);
 
-namespace TonsOfLimes\FilenameTooLongPlugin\Utils;
+namespace TonsOfLimes\FilenameTooLongPlugin\Util;
 
-const PLUGIN_NAME = '[tonsoflimes/plugin-filename-too-long]';
+const PLUGIN_NAME = 'tonsoflimes/plugin-filename-too-long';
 
 /**
  * Format log message related to package processing.
@@ -21,7 +21,7 @@ function format(string $package, string $message, ...$args): string {
         PLUGIN_NAME,
         sprintf('[%s]', $package),
         ' ',
-        sprintf($message, $args)
+        sprintf($message, ...$args)
     ]);
 
     return implode('', $parts);

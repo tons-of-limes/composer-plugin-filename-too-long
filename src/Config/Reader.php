@@ -52,7 +52,7 @@ readonly class Reader
             return null;
         }
 
-        $globalConfigPath = rtrim($homeDir, '/').'/config.json';
+        $globalConfigPath = rtrim($homeDir, '/').'/composer.json';
         if (!is_file($globalConfigPath) || !is_readable($globalConfigPath)) {
             return null;
         }
