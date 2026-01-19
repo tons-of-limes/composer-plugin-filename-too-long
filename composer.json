@@ -2,7 +2,7 @@
     "name": "tonsoflimes/plugin-filename-too-long",
     "type": "composer-plugin",
     "description": "Composer plugin to handle `filename too long` issue on encrypted filesystems.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": [
         "MIT"
     ],
